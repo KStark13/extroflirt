@@ -13,9 +13,13 @@
 	<button id="joinButton" class="btn btn-primary joinButton" onclick="joinRoom()">Join</button>
 
 	<script type="text/javascript">
+		console.log(window.location);
+		// function to sign in user without auth
 		function joinRoom() { debugger;
+			// sets the user name input to uuid
 			var uuid = $('#userName').val();
 			window.location = 'ChatRoom.html?uuid=' + uuid; 
+
 		}
 	</script>
 </body>
